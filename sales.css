@@ -219,6 +219,7 @@ th, td {
  text-align: left;
 }
 
+
 /* Responsive styles */
 @media (max-width: 600px) {
  form {
@@ -229,3 +230,12 @@ th, td {
      width: 100%;
  }
 }
+.footer span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   font-size: 2px;
+   }
+   .footer a{
+    color: #64015c;
+   }
