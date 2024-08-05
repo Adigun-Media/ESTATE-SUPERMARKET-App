@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Page</title>
+    <link rel="stylesheet" href="sales.css">
+</head>
+<body>
+
+    <!-- Loader -->
+    <div id="loader">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+        <h1 class="welcome-text">WELCOME TO SALES</h1>
+    </div>
+<div class="ned">
+    <nav1>
+     <div class="menu">
+       <div class="logo">
+         <a href="#">Estate Supermarket</a>
+       </div>
+       <ul>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="inventory.html">Inventory</a></li>
+         <li><a href="#">Sales</a></li>
+         <li><a href="#">Contact</a></li>
+         <li><a href="#">Feedback</a></li>
+       </ul>
+     </div>
+   </nav1></div>
+
+    <!-- Navbar -->
+   <div class="receipt"> <nav>
+        <div class="scrolling-text">
+            ESTATE MARKET,ASABA. HAPPY CUSTOMER, HAPPY BUSINESS!!!
+        </div>
+        <button id="totalSales">TOTAL TODAY: ₦0</button>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <h1>RECEIPT & SALES RECORD</h1>
+        <form id="salesForm">
+            <label for="barcode">Barcode:</label>
+            <input type="text" id="barcode" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" required>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" required>
+
+            <label for="price">Price:</label>
+            <input type="number" id="price" required>
+
+            <label for="total">Total Cost:</label>
+            <input type="number" id="total" disabled>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <table id="salesTable">
+            <thead>
+                <tr>
+                    <th>Barcode</th>
+                    <th>Date</th>
+                    <th>Phone Number</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total Cost</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Entries will be dynamically added here -->
+            </tbody>
+        </table>
+    </main></div>
+
+    <script src="sales.js"></script>
+</body>
+</html>
